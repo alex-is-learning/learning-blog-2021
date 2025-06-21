@@ -5,6 +5,12 @@ pagination:
   collection: posts
 ---
 
+<div class="callout" style="background: #ffe066; border-left: 6px solid #ffb300; padding: 1.2em 1.5em; margin-bottom: 2em; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.07);">
+  <strong>Note from Alex (June 2025):</strong>
+  <p>Hello! If you're reading this, a quick note that this website is from 2021. It's old as hell - I haven't re-read each post (21st of June 2025 Alex talking here) - I am almost certain my beliefs re: flashcards and learning how to learn will have matured in a bunch of ways since writing all of this. But I stand by this project, as I'm still a big anki fan.</p>
+  <p><a href="https://www.alexislearning.me/" target="_blank" style="font-weight: bold; color: #b85c00; text-decoration: underline;">Link to my 2025 website</a></p>
+</div>
+
 <div class="article-list">
   {% for post in paginator.posts reversed %}
   <h2><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
